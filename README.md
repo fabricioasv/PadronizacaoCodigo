@@ -37,7 +37,10 @@ private void escreverUmBomCodigo() {
 }
 ```
 ```
-private void escreverUmBomCodigo() {
+private Fatura escreverUmBomCodigo() {
   Fatura faturaDoCliente = ObterFaturaDoClienteComRetencaoDeImpostosReferenteAOutroEstado();
+  
+  return faturaDoCliente;
 }
 ```
+   - **Importante**: No segundo cenário, existia apenas uma variável do tipo Fatura. Caso existam mais, é aconselhável, que seja utilizada a primeira opção
