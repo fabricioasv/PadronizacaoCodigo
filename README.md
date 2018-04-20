@@ -43,6 +43,7 @@ private Fatura escreverUmBomCodigo() {
   return faturaDoCliente;
 }
 ```
+
 > **Importante**: No segundo cenário, existia apenas uma variável do tipo Fatura. Caso existam mais, é aconselhável, que seja utilizada a primeira opção
 
 5. Variáveis não devem ter apenas 1 letra - Ex: a, x, i -, mesmo que sejam auxiliares
