@@ -21,15 +21,5 @@ Ex: CalcularImposto(), EnvioEmail
 | Interface  | I + PascalCase  | IEnvioEmail  |
 | Método  | PascalCase  | EnviarEmailParaClientePf()  |
 | Variável  | CamelCase  | nomeCliente  |
-| Membro  |   |   |
-| Constantes  |   |   |
-
-
-
-Classe	Pascal	PessoaJuridica
-Interface	I + Pascal	ICliente
-Método Público , Propriedades	Pascal	NomeCompleto()
-Método Privado	Camel Case	calculaDesconto()
-Variável Pública	Pascal	SobreNome
-Variável Privada	Camel Case	impostoPredial
-Constantes	Maiúsculas com sublinhado   	    VALOR_DESCONTO    
+| Membro Público/Privado | _ + CamelCase  | _ sobrenomeCliente |
+| Constantes  | MAIÚSCULAS COM SUBLINHADO  | VALOR_DESCONTO  |
