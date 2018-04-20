@@ -36,4 +36,8 @@ private void escreverUmBomCodigo() {
   Fatura faturaDoCliente = ObterFaturaDoCliente();
 }
 ```
-
+```
+private void escreverUmBomCodigo() {
+  Fatura faturaDoCliente = ObterFaturaDoClienteComRetencaoDeImpostosReferenteAOutroEstado();
+}
+```
