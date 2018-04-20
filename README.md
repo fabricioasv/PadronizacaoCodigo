@@ -23,3 +23,17 @@ Ex: CalcularImposto(), EnvioEmail
 | Variável  | CamelCase  | nomeCliente  |
 | Membro Público/Privado | _ + CamelCase  | _ sobrenomeCliente |
 | Constantes  | MAIÚSCULAS COM SUBLINHADO  | VALOR_DESCONTO  |
+
+## Escrita de um bom código
+
+1. Classes devem ser escritas com PascalCase
+2. Interfaces, preferencialmente, devem ter o indicador de interface 'I' seguido da classe que irá implementa-la
+3. O nome do método deve ser um verbo significativo que deixe claro o objetivo do mesmo
+4. A variável deve ser, preferencialmente, o mesmo nome do método que atribui seu valor sem o verbo (Exemplo abaixo). Caso não for possível, deve deixar claro o objetivo da mesma
+
+```
+private void escreverUmBomCodigo() {
+  Fatura faturaDoCliente = ObterFaturaDoCliente();
+}
+```
+
