@@ -21,7 +21,8 @@ Ex: CalcularImposto(), EnvioEmail
 | Interface  | I + PascalCase  | IEnvioEmail  |
 | Método  | PascalCase  | EnviarEmailParaClientePf()  |
 | Variável  | CamelCase  | nomeCliente  |
-| Membro Público/Privado | _ + CamelCase  | _ sobrenomeCliente |
+| Membro | _ + CamelCase  | _ sobrenomeCliente |
+| Propriedade | PascalCase  | SobrenomeCliente |
 | Constantes  | MAIÚSCULAS COM SUBLINHADO  | VALOR_DESCONTO  |
 
 ## Escrita de um bom código
