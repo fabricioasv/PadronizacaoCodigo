@@ -29,7 +29,7 @@ Ex: CalcularImposto(), EnvioEmail
 1. Classes devem ser escritas com PascalCase
 2. Interfaces, preferencialmente, devem ter o indicador de interface 'I' seguido da classe que irá implementa-la
 3. O nome do método deve ser um verbo significativo que deixe claro o objetivo do mesmo
-4. A variável deve ser, preferencialmente, o mesmo nome do método que atribui seu valor sem o verbo (Exemplo abaixo). Caso não for possível, deve deixar claro o objetivo da mesma
+4. A variável deve ser, preferencialmente, o mesmo nome do método que atribui seu valor sem o verbo. Caso não for possível, deve deixar claro o objetivo da mesma
 
 ```
 private void escreverUmBomCodigo() {
@@ -43,4 +43,14 @@ private Fatura escreverUmBomCodigo() {
   return faturaDoCliente;
 }
 ```
-      - **Importante**: No segundo cenário, existia apenas uma variável do tipo Fatura. Caso existam mais, é aconselhável, que seja utilizada a primeira opção
+> **Importante**: No segundo cenário, existia apenas uma variável do tipo Fatura. Caso existam mais, é aconselhável, que seja utilizada a primeira opção
+
+5. Variáveis não devem ter apenas 1 letra - Ex: a, x, i -, mesmo que sejam auxiliares
+
+```
+private bool verificarSeExistemFaturasDoCliente(List<Fatura> faturas, string codigoCliente) {
+  bool existemFaturasDoCliente = faturas.Any(fatura => fatura.CodigoCliente = codigoCliente);
+  
+  return existemFaturasDoCliente;
+}
+```
