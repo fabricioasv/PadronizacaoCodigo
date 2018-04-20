@@ -12,3 +12,10 @@ Ex: valorDaFatura, codigoDoCliente, valorDoImpostoRetido
 Denominaçao quando se escreve palavras compostas ou frases onde a primeira letra de cada palavra é iniciada com maiúscula. O padrão PascalCase é mais utilizado para nomear métodos e classes.
 
 Ex: CalcularImposto(), EnvioEmail
+
+## Usando CamelCase e PascalCase
+
+| Estrutura  | Nomeclatura | Exemplo |
+| ------------- | ------------- | ------------- |
+| Classe  | PascalCase  | EnvioEmail  |
+| Interface  | I + PascalCase  | IEnvioEmail  |
