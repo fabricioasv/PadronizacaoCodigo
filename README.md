@@ -43,4 +43,4 @@ private Fatura escreverUmBomCodigo() {
   return faturaDoCliente;
 }
 ```
-   - **Importante**: No segundo cenário, existia apenas uma variável do tipo Fatura. Caso existam mais, é aconselhável, que seja utilizada a primeira opção
+      - **Importante**: No segundo cenário, existia apenas uma variável do tipo Fatura. Caso existam mais, é aconselhável, que seja utilizada a primeira opção
