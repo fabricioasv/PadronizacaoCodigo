@@ -73,7 +73,7 @@ public string ObterContatoPrincipal()
 }
 ```
 
-3. As chaves {} devem estar no mesmo nível da declaração. Início e fim
+3. As chaves { } devem estar no mesmo nível da declaração. Início e fim
 
 <table class="tg">
   <tr>
