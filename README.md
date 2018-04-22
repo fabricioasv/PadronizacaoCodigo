@@ -75,11 +75,20 @@ public string ObterContatoPrincipal()
 
 3. As chaves {} devem estar no mesmo nível da declaração. Início e fim
 
-| Bom  | Ruim |
-| ------------- | ------------- |
-| public void ObterContatoPrincipal()
-| {
-| 	...
-| } | public void ObterContatoPrincipal() {
-	...
-} |
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	public void ObterContatoPrincipal()<br />
+	{<br />
+	}
+    </td>
+    <td class="tg-us36">
+	public void ObterContatoPrincipal() {<br />
+	}
+    </td>
+  </tr>
+</table>
