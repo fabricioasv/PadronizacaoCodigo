@@ -56,3 +56,30 @@ private bool verificarSeExistemFaturasDoCliente(List<Fatura> faturas, string cod
   return existemFaturasDoCliente;
 }
 ```
+
+## Indentação
+
+1. Sempre utilize TAB para identação
+2. Caso seja necessário utilizar mais de uma linha, deve haver apenas uma identação. As demais linhas devem seguir a primeira
+
+```
+public string ObterContatoPrincipal()
+{
+    string contatoPrincipal = _contatos.OrderByDescending(
+        contato => contato).FirstOrDefault(
+        contato => contato.Contains("principal"));
+
+    return contatoPrincipal;
+}
+```
+
+3. As chaves {} devem estar no mesmo nível da declaração. Início e fim
+
+| Bom  | Ruim |
+| ------------- | ------------- |
+| public void ObterContatoPrincipal()
+| {
+| 	...
+| } | public void ObterContatoPrincipal() {
+	...
+} |
