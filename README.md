@@ -118,7 +118,7 @@ public string ObterContatoPrincipal()
 	}
     </td>
     <td class="tg-us36">
-	for (int variavel=0;variavel<100;++variavel)<br />
+	for(int variavel=0;variavel<100;++variavel)<br />
 	{<br />
 	}
     </td>
