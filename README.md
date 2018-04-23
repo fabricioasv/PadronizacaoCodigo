@@ -91,4 +91,15 @@ public string ObterContatoPrincipal()
 	}
     </td>
   </tr>
+  <tr>
+    <td class="tg-us36">
+	foreach (Fatura fatura in faturas)<br />
+	{<br />
+	}
+    </td>
+    <td class="tg-us36">
+	foreach (Fatura fatura in faturas) {<br />
+	}
+    </td>
+  </tr>
 </table>
