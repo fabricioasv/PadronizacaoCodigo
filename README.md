@@ -103,3 +103,24 @@ public string ObterContatoPrincipal()
     </td>
   </tr>
 </table>
+
+4. Utilize 1 espaço antes e depois de cada operador (<; >;<=; =>; etc) e 1 espaço apenas depois de cada separador
+
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	for (int variavel = 0; variavel < 100; ++variavel)<br />
+	{<br />
+	}
+    </td>
+    <td class="tg-us36">
+	for (int variavel=0;variavel<100;++variavel)<br />
+	{<br />
+	}
+    </td>
+  </tr>
+</table>
