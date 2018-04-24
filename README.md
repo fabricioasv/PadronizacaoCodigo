@@ -132,7 +132,23 @@ public string ObterContatoPrincipal()
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
 4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
 
-(Exemplo)
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	if (tipoTarifa == Padrao) <br /> { <br /> }
+	else if (tipoTarifa == Promocional) <br /> { <br /> }
+	else <br /> { <br /> }
+    </td>
+    <td class="tg-us36">
+	if (tipoTarifa == Padrao) <br /> { <br /> }
+	else <br /> { <br /> <br /> }
+    </td>
+  </tr>
+</table>
 
 5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
 
