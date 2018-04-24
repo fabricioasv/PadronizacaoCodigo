@@ -140,14 +140,14 @@ public string ObterContatoPrincipal()
     <td class="tg-us36">
 	public void CalcularPrecoComDesconto(double preco, double desconto)<br />
 	{<br /> 
-	     &nbsp;&nbsp;&nbsp;double precoComDesconto = preco - desconto;  <br />
+	     &nbsp;&nbsp;&nbsp;&nbsp; double precoComDesconto = preco - desconto;  <br />
 	}
     </td>
     <td class="tg-us36">
 	public void Calcular(double preco, double desconto) 
 	{<br />
-	     double preco = preco - desconto; <br />
-	     EnviarEmail(); <br />
+	     &nbsp;&nbsp;&nbsp;&nbsp; double preco = preco - desconto; <br />
+	     &nbsp;&nbsp;&nbsp;&nbsp; EnviarEmail(); <br />
 	}
     </td>
   </tr>
