@@ -193,5 +193,5 @@ public string ObterContatoPrincipal()
 
 ## Ao iniciar uma aplicação
 
-1. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dados no início da aplicação. Garanta que esteja tudo pronto para começar.
+1. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dado. Garanta que esteja tudo pronto para começar.
 
