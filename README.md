@@ -130,17 +130,31 @@ public string ObterContatoPrincipal()
 1. Evite métodos extensos. Caso o método possua mais de 30 linhas, opte por uma refatoração.
 2. O método deve ser nomeado de modo a indicar sua função. O nome deve ser, preferencialmente, autoexplicativo.
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
-
 4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Se for válido, considere todas as possibilidades. 
+
+
 
 5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
 
-```
-	const int diasDeLocacao = 30; 
-	const double precoPorDia = 10; 
-	
-	const double precoFinal = precoPorDia * diasDeLocacao;
-```
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	const int diasDeLocacao = 30; <br />
+	const double precoPorDia = 10; <br />
+	const double desconto = 0,1; <br /><br />
+	const double precoFinal = precoPorDia * diasDeLocacao; <br />
+	const double precoComDesconto = precoFinal * (1 - desconto);
+    </td>
+    <td class="tg-us36">
+	const double precoFinal = 10 * 30; <br />
+	const double precoComDesconto = precoFinal * (1 - 0,1);
+    </td>
+  </tr>
+</table>
 
 6. 
 
