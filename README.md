@@ -134,7 +134,7 @@ public string ObterContatoPrincipal()
 
 <table class="tg">
   <tr>
-    <th class="tg-us36">Bom</th>
+    <th class="tg-us30">Bom</th>
     <th class="tg-us36">Ruim</th>
   </tr>
   <tr>
@@ -155,7 +155,7 @@ public string ObterContatoPrincipal()
 	    } <br /> 
 	else <br /> { <br /> 
 	    &nbsp;&nbsp;&nbsp;&nbsp; // Promocional <br /> 
-	    }
+	    } <br />
 	    // Se um novo tipo for incluido, não ocorrera diferenciacao com o Promocional. 
     </td>
   </tr>
