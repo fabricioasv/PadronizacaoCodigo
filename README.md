@@ -142,10 +142,12 @@ public string ObterContatoPrincipal()
   </tr>
   <tr>
     <td class="tg-us36">
-	
+	const int diasDeLocacao = 30; <br />
+	const double precoPorDia = 10; <br /><br />
+	const double precoFinal = precoPorDia * diasDeLocacao;
     </td>
     <td class="tg-us36">
-	
+	const double precoFinal = 10 * 30;
     </td>
   </tr>
 </table>
