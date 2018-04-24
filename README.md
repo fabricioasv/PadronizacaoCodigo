@@ -140,7 +140,7 @@ public string ObterContatoPrincipal()
     <td class="tg-us36">
 	public void CalcularPrecoComDesconto(double preco, double desconto)<br />
 	{<br /> 
-	     double precoComDesconto = preco - desconto;  <br />
+	     <p>double precoComDesconto = preco - desconto;  <br />
 	}
     </td>
     <td class="tg-us36">
@@ -148,17 +148,6 @@ public string ObterContatoPrincipal()
 	{<br />
 	     double preco = preco - desconto; <br />
 	     EnviarEmail(); <br />
-	}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-us36">
-	foreach (Fatura fatura in faturas)<br />
-	{<br />
-	}
-    </td>
-    <td class="tg-us36">
-	foreach (Fatura fatura in faturas) {<br />
 	}
     </td>
   </tr>
