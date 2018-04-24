@@ -139,13 +139,23 @@ public string ObterContatoPrincipal()
   </tr>
   <tr>
     <td class="tg-us36">
-	if (tipoTarifa == Padrao) <br /> { <br /> // Padrao <br /> } <br /> 
-	else if (tipoTarifa == Promocional) <br /> { <br /> // Promocional <br /> }
-	else <br /> { <br /> // Tipo inesperado lança uma exceção <br /> }
+	if (tipoTarifa == Padrao) <br /> { <br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // Padrao <br /> 
+	    } <br /> 
+	else if (tipoTarifa == Promocional) <br /> { <br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // Promocional <br /> 
+	    } <br />
+	else <br /> { <br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // Tipo inesperado lança uma exceção <br /> 
+	    }
     </td>
     <td class="tg-us36">
-	if (tipoTarifa == Padrao) <br /> { <br /> // Padrao <br /> } <br /> 
-	else <br /> { <br /> // Promocional <br /> }
+	if (tipoTarifa == Padrao) <br /> { <br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // Padrao <br /> 
+	    } <br /> 
+	else <br /> { <br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // Promocional <br /> 
+	    }
 	    // Se um novo tipo for incluido, não ocorrera diferenciacao com o Promocional. 
     </td>
   </tr>
