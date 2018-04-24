@@ -130,7 +130,7 @@ public string ObterContatoPrincipal()
 1. Evite métodos extensos. Caso o método possua mais de 30 linhas, opte por uma refatoração.
 2. O método deve ser nomeado de modo a indicar sua função. O nome deve ser, preferencialmente, autoexplicativo.
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
-4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Se for válido, considere todas as possibilidades. 
+4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
 
 
 
@@ -156,13 +156,7 @@ public string ObterContatoPrincipal()
   </tr>
 </table>
 
-6. 
-
-7. 
-
-8. 
-
-9. Utilize o recurso <b>enum</b> para indicar valores discretos.
+6. Utilize o recurso <b>enum</b> para indicar valores discretos.
 
 ```
 	enum StatusPagamento
@@ -192,5 +186,13 @@ public string ObterContatoPrincipal()
 	     }
 	}
 ```
-10. Variáveis membro são declaradas como privadas e as propriedades podem ser public/protected.
+7. Variáveis membro são declaradas como privadas e as propriedades podem ser public/protected.
+8. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
+9. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
+10. Sempre capture somente exceções específicas.
+11. 
 
+## Ao iniciar uma aplicação
+
+1. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dados no início da aplicação. Garanta que esteja tudo pronto para começar.
+2. 
