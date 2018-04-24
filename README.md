@@ -131,15 +131,32 @@ public string ObterContatoPrincipal()
 2. O método deve ser nomeado de modo a indicar sua função. O nome deve ser, preferencialmente, autoexplicativo.
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
 
-
-
-4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
-
-(TABELA EXEMPLO)
+4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Se for válido, considere todas as possibilidades. 
 
 5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
 
-
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	
+    </td>
+    <td class="tg-us36">
+	
+    </td>
+  </tr>
+</table>
 
 6. 
+
+7. 
+
+8. 
+
+9. Utilize o recurso <b>enum</b> para indicar valores discretos.
+
+10. Variáveis membro são declaradas como privadas e as propriedades podem ser public/protected.
 
