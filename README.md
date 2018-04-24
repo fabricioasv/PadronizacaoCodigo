@@ -186,10 +186,12 @@ public string ObterContatoPrincipal()
 	     }
 	}
 ```
-7. Variáveis membro são declaradas como privadas e as propriedades podem ser public/protected.
-8. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
-9. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
-10. Capture exceções específicas.
+7. Variáveis membros são declaradas como privadas e as propriedades podem ser public/protected.
+8. Evite compartilhar variável de membro entre os métodos. Em tais situações, opte por declarar variáveis locais.
+9. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
+10. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
+11. Capture exceções específicas.
+12. Mensagens de erro devem direcionar o usuário ao problema, logo, insira uma mensagem clara e específica do erro.
 
 ## Ao iniciar uma aplicação
 
