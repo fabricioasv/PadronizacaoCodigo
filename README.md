@@ -131,27 +131,7 @@ public string ObterContatoPrincipal()
 2. O método deve ser nomeado de modo a indicar sua função. O nome deve ser, preferencialmente, autoexplicativo.
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
 
-<table class="tg">
-  <tr>
-    <th class="tg-us36">Bom</th>
-    <th class="tg-us36">Ruim</th>
-  </tr>
-  <tr>
-    <td class="tg-us36">
-	public void CalcularPrecoComDesconto(double preco, double desconto)<br />
-	{<br /> 
-	     &nbsp;&nbsp;&nbsp;&nbsp; double precoComDesconto = preco - desconto;  <br />
-	}
-    </td>
-    <td class="tg-us36">
-	public void Calcular(double preco, double desconto) 
-	{<br />
-	     &nbsp;&nbsp;&nbsp;&nbsp; double preco = preco - desconto; <br />
-	     &nbsp;&nbsp;&nbsp;&nbsp; EnviarEmail(); <br />
-	}
-    </td>
-  </tr>
-</table>
+
 
 4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
 
@@ -159,7 +139,7 @@ public string ObterContatoPrincipal()
 
 5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
 
-(TABELA EXEMPLO)
+
 
 6. 
 
