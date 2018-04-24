@@ -132,7 +132,7 @@ public string ObterContatoPrincipal()
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
 4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
 
-
+(Exemplo)
 
 5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
 
@@ -189,10 +189,9 @@ public string ObterContatoPrincipal()
 7. Variáveis membro são declaradas como privadas e as propriedades podem ser public/protected.
 8. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
 9. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
-10. Sempre capture somente exceções específicas.
-11. 
+10. Capture exceções específicas.
 
 ## Ao iniciar uma aplicação
 
 1. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dados no início da aplicação. Garanta que esteja tudo pronto para começar.
-2. 
+
