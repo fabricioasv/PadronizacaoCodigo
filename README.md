@@ -150,5 +150,33 @@ public string ObterContatoPrincipal()
 
 9. Utilize o recurso <b>enum</b> para indicar valores discretos.
 
+```
+	enum StatusPagamento
+	     {
+		 EmAberto;
+		 Paga;
+		 Vencida;
+		 Renegociada;
+	     }
+	void EnviarEmail(string mensagem, StatusPagamento statusDePagamento)
+	{
+	     switch (statusDePagamento)
+	     {
+	         case StatusPagamento.EmAberto:
+		     // manda email
+		     break;
+		 case StatusPagamento.Paga:
+		     // manda email
+		     break;
+		 case StatusPagamento.Vencida:
+		     // manda email
+		     break;
+		 case StatusPagamento.Renegociada:
+		      // manda email
+		     break;
+	         default;
+	     }
+	}
+```
 10. Variáveis membro são declaradas como privadas e as propriedades podem ser public/protected.
 
