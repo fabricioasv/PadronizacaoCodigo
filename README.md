@@ -135,7 +135,7 @@ public string ObterContatoPrincipal()
 <table class="tg">
   <tr>
     <th class="tg-us30">Bom</th>
-    <th class="tg-us36">Ruim</th>
+    <th class="tg-us30">Ruim</th>
   </tr>
   <tr>
     <td class="tg-us36">
