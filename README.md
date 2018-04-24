@@ -124,3 +124,53 @@ public string ObterContatoPrincipal()
     </td>
   </tr>
 </table>
+
+## Boas práticas de programação
+
+1. Evite métodos extensos. Caso o método possua mais de 30 linhas, opte por uma refatoração.
+2. O método deve ser nomeado de modo a indicar sua função. O nome deve ser, preferencialmente, autoexplicativo.
+3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
+
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	public void CalcularPrecoComDesconto(double preco, double desconto)<br />
+	{<br /> 
+	  double precoComDesconto = preco - desconto  <br />
+	}
+    </td>
+    <td class="tg-us36">
+	public void Calcular(double preco, double desconto) 
+	{<br />
+	 double precoComDesconto = preco - desconto; <br />
+	 EnviarEmail(); <br />
+	}
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	foreach (Fatura fatura in faturas)<br />
+	{<br />
+	}
+    </td>
+    <td class="tg-us36">
+	foreach (Fatura fatura in faturas) {<br />
+	}
+    </td>
+  </tr>
+</table>
+
+4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
+
+(TABELA EXEMPLO)
+
+5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
+
+(TABELA EXEMPLO)
+
+6. 
+
