@@ -138,7 +138,7 @@ public string ObterContatoPrincipal()
     <th class="tg-us30">Ruim</th>
   </tr>
   <tr>
-    <td class="tg-us36">
+    <td class="tg-us30">
 	if (tipoTarifa == Padrao) <br /> { <br /> 
 	    &nbsp;&nbsp;&nbsp;&nbsp; // Padrao <br /> 
 	    } <br /> 
@@ -149,7 +149,7 @@ public string ObterContatoPrincipal()
 	    &nbsp;&nbsp;&nbsp;&nbsp; // Tipo inesperado lança uma exceção <br /> 
 	    }
     </td>
-    <td class="tg-us36">
+    <td class="tg-us30">
 	if (tipoTarifa == Padrao) <br /> { <br /> 
 	    &nbsp;&nbsp;&nbsp;&nbsp; // Padrao <br /> 
 	    } <br /> 
