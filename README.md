@@ -135,22 +135,12 @@ public string ObterContatoPrincipal()
 
 5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
 
-<table class="tg">
-  <tr>
-    <th class="tg-us36">Bom</th>
-    <th class="tg-us36">Ruim</th>
-  </tr>
-  <tr>
-    <td class="tg-us36">
-	const int diasDeLocacao = 30; <br />
-	const double precoPorDia = 10; <br /><br />
+```
+	const int diasDeLocacao = 30; 
+	const double precoPorDia = 10; 
+	
 	const double precoFinal = precoPorDia * diasDeLocacao;
-    </td>
-    <td class="tg-us36">
-	const double precoFinal = 10 * 30;
-    </td>
-  </tr>
-</table>
+```
 
 6. 
 
