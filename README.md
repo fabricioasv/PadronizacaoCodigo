@@ -158,7 +158,7 @@ public string ObterContatoPrincipal()
 		 Vencida;
 		 Renegociada;
 	     }
-	void EnviarEmail(string mensagem, StatusPagamento statusDePagamento)
+	void EnviarEmail(string conteudoMensagem, StatusPagamento statusDePagamento)
 	{
 	     switch (statusDePagamento)
 	     {
@@ -172,7 +172,7 @@ public string ObterContatoPrincipal()
 		     // manda email
 		     break;
 		 case StatusPagamento.Renegociada:
-		      // manda email
+		     // manda email
 		     break;
 	         default;
 	     }
