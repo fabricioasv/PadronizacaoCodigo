@@ -215,13 +215,13 @@ public string ObterContatoPrincipal()
   </tr>
   <tr>
     <td class="tg-us36">
-	if (nome.ToLower() == "cliente") <br />
+	if (nome.ToLower() == "contrato") <br />
 	{<br /> 
 	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
     <td class="tg-us36">
-	if (nome == "cliente") <br />
+	if (nome == "contrato") <br />
 	{<br /> 
 	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
@@ -243,21 +243,19 @@ public string ObterContatoPrincipal()
   </tr>
   <tr>
     <td class="tg-us36">
-	if (nome.trim() == "Contrato") <br />
+	if (nome.trim() == "Cliente") <br />
 	{<br /> 
 	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
     <td class="tg-us36">
-	if (nome == " Contrato ") <br />
+	if (nome == "  Cliente  ") <br />
 	{<br /> 
     	&nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
   </tr>
 </table>
-
-(TERMINAR EXEMPLO)
 
 8. Utilize o recurso <b>enum</b> para indicar valores discretos.
 
@@ -300,8 +298,8 @@ public string ObterContatoPrincipal()
 
 1. Existem diversos tipos de exceções já definidas no .Net. Antes de criar uma exceção, verifique se já não existe uma que se enquadra para sua situação (https://docs.microsoft.com/pt-br/dotnet/standard/design-guidelines/using-standard-exception-types).
 2. Caso sua exceção for de negócio, crie, capture e lance suas próriprias exceções. Nunca utilize a exceção genérica "Exception" para todos os casos.
-3. Use try-catch em sua camada de dados para capturar as exceções de banco de dados. Após gravar a exceção, ela pode ser lançada para que uma outra camada da aplicação possa tomar as medidas adequadas.
-4 . Ao capturar um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
+3. Use try-catch na camada de dados para capturar as exceções do banco de dados. Após gravar a exceção, ela pode ser lançada para que uma outra camada da aplicação possa tomar as medidas adequadas.
+4. Ao capturar um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
 
 <table class="tg">
   <tr>
