@@ -182,6 +182,48 @@ public string ObterContatoPrincipal()
     </td>
   </tr>
 </table>
+ 
+ 6. Use String.Empty em substituição de "".
+ 
+ 7. Ao fazer comparações de strings, converta para minúsculas, maiúculas e/ou retire os espaços de antes e depois. Isso garante que a string irá corresponder, mesmo se estiver escrita de forma diferente. 
+ 
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	if (nome.ToLower() == "cliente") <br />
+	{<br /> 
+	    // ... <br />
+	}
+    </td>
+    <td class="tg-us36">
+	if (nome == "cliente") <br />
+	{<br /> 
+	    // ... <br />
+	}
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	if (nome.ToUpper() == "AGENCIA") <br />
+	{<br /> 
+	    // ... <br />
+	}
+    </td>
+    <td class="tg-us36">
+	if (nome == "AGENCIA") <br />
+	{<br /> 
+    	// ... <br />
+	}
+    </td>
+  </tr>
+</table>
+
+
+
 
 6. Utilize o recurso <b>enum</b> para indicar valores discretos.
 
