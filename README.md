@@ -224,9 +224,11 @@ public string ObterContatoPrincipal()
 
 1. Existem diversos tipos de exceções já definidas no .Net. Antes de criar uma exceção, verifique se já não existe uma que se enquadra para sua situação (https://docs.microsoft.com/pt-br/dotnet/standard/design-guidelines/using-standard-exception-types).
 2. Caso sua exceção for de negócio, crie, capture e lance suas próriprias exceções. Nunca utilize a exceção genérica "Exception" para todos os casos.
-3. Ao capturar uma exceção de um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
+3. Ao capturar um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
 
 ```
+BOM/RUIM
+
 	try
 	{
 		// Seu código
