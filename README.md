@@ -226,24 +226,40 @@ public string ObterContatoPrincipal()
 2. Caso sua exceção for de negócio, crie, capture e lance suas próriprias exceções. Nunca utilize a exceção genérica "Exception" para todos os casos.
 3. Ao capturar um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
 
-```
-BOM/RUIM
-
-	try
-	{
-		// Seu código
-	}
-	catch (ExcecaoNegocio excecao)
-	{
-		LogarExcecao(excecao);
-
-		throw;
-	}
-	catch
-	{
-		throw;
-	}
-```
+<table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	try<br />
+	{<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;// Seu código<br />
+	}<br />
+	catch (ExcecaoNegocio excecao)<br />
+	{<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;LogarExcecao(excecao);<br />
+		<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;throw;<br />
+	}<br />
+	catch<br />
+	{<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;throw;<br />
+	}<br />
+    </td>
+    <td class="tg-us36">
+	try<br />
+	{<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;// Seu código<br />
+	}<br />
+	catch(Exception excecao)<br />
+	{<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;throw excecao;<br />
+	}<br />
+    </td>
+  </tr>
+</table>
 
 ## Ao iniciar uma aplicação
 
