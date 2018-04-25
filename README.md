@@ -206,7 +206,7 @@ public string ObterContatoPrincipal()
   </tr>
 </table>
  
- 7. Ao fazer comparações de strings, converta para minúsculas, maiúculas e/ou retire os espaços de antes e depois. Isso garante que a string irá corresponder, mesmo se estiver escrita de forma diferente. 
+ 7. Ao fazer comparações de strings, converta para minúsculas, maiúculas e/ou retire os espaços do início e do fim. Isso garante que a string irá corresponder, mesmo se estiver escrita de forma diferente. 
  
 <table class="tg">
   <tr>
@@ -231,13 +231,27 @@ public string ObterContatoPrincipal()
     <td class="tg-us36">
 	if (nome.ToUpper() == "AGENCIA") <br />
 	{<br /> 
-	    // ... <br />
+	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
     <td class="tg-us36">
 	if (nome == "AGENCIA") <br />
 	{<br /> 
-    	// ... <br />
+    	&nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
+	}
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	if (nome.trim() == "Contrato") <br />
+	{<br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
+	}
+    </td>
+    <td class="tg-us36">
+	if (nome == " Contrato ") <br />
+	{<br /> 
+    	&nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
   </tr>
