@@ -243,7 +243,7 @@ public string ObterContatoPrincipal()
   </tr>
 </table>
 
-(TERMINAR)
+(TERMINAR EXEMPLO)
 
 8. Utilize o recurso <b>enum</b> para indicar valores discretos.
 
@@ -326,7 +326,7 @@ public string ObterContatoPrincipal()
 
 ## Ao iniciar uma aplicação
 
-1. Se um valor errado for encontrado no arquivo de configuração, a aplicação deve informar ao usuário quais são os valores corretos por meio de uma mensagem de erro.
+1. Se um valor errado for encontrado no arquivo de configuração, a aplicação deve informar ao usuário, por meio de uma mensagem de erro, quais são os valores corretos.
 2. A aplicação deve ser capaz de criar um arquivo com valores padrão para o caso de algum arquivo de configuração necessário não for encontrado.
 3. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dado. Garanta que esteja tudo pronto para começar.
 
@@ -339,5 +339,5 @@ public string ObterContatoPrincipal()
 ## Comentários
 
 1. Escreva comentários sempre que necessário.
-2. Evite comentar cada linha de código. Isso pode indicar que os nomes das variáveis e métodos não estão claros o bastante.
+2. Evite comentar cada linha de código. Se os nomes das variáveis e métodos estão claros, não há a necessidade de comentar tudo.
 3. Sempre verifique os comentários. Garanta que a ortografia esteja correta e que a escrita esteja suficiente para o entendimento do código.
