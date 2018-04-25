@@ -351,5 +351,5 @@ public string ObterContatoPrincipal()
 ## Comentários
 
 1. Escreva comentários sempre que necessário.
-2. Evite comentar cada linha de código. Se os nomes das variáveis e métodos estão claros, não há a necessidade de comentar tudo.
+2. Evite comentar cada linha de código. Se os nomes das variáveis e métodos estão autoexplicativos, não há a necessidade de comentar tudo.
 3. Sempre verifique os comentários. Garanta que a ortografia esteja correta e que a escrita esteja suficiente para o entendimento do código.
