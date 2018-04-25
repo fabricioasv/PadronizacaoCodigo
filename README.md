@@ -128,7 +128,7 @@ public string ObterContatoPrincipal()
 ## Boas práticas de programação
 
 1. Evite métodos extensos. Caso o método possua mais de 30 linhas, opte por uma refatoração.
-2. O método deve ser nomeado de modo a indicar sua função. O nome deve ser, preferencialmente, autoexplicativo.
+2. O método deve ser nomeado de modo a indicar sua função. O nome deve sempre ser autoexplicativo.
 3. O método deve executar "uma única tarefa", não desviando de sua responsabilidade.
 4. Fique atento aos possíveis valores que um dado parâmetro pode assumir. Considere todas as possibilidades. 
 
@@ -161,7 +161,7 @@ public string ObterContatoPrincipal()
   </tr>
 </table>
 
-5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo.
+5. Declare as constantes. Isso facilita o entendimento do código e, caso necessário, alterações no mesmo. Valores soltos no código não são claros.
 
 <table class="tg">
   <tr>
@@ -187,12 +187,13 @@ public string ObterContatoPrincipal()
 
 ```
 	enum StatusPagamento
-	     {
-		 EmAberto;
-		 Paga;
-		 Vencida;
-		 Renegociada;
-	     }
+	{
+		EmAberto;
+		Paga;
+		Vencida;
+		Renegociada;
+	}
+
 	void EnviarEmail(string conteudoMensagem, StatusPagamento statusDePagamento)
 	{
 	     switch (statusDePagamento)
@@ -213,12 +214,34 @@ public string ObterContatoPrincipal()
 	     }
 	}
 ```
-7. Variáveis membros são declaradas como privadas e as propriedades podem ser public/protected.
+7. Fique atento aos tipos de acesso (public / private / protected / internal). Variáveis, classes, membros devem ser declarados de forma correta de acordo com o seu uso e nível de acesso.
 8. Evite compartilhar variável de membro entre os métodos. Em tais situações, opte por declarar variáveis locais.
 9. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
 10. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
-11. Capture exceções específicas.
-12. Mensagens de erro devem direcionar o usuário ao problema, logo, insira uma mensagem clara e específica do erro.
+11. Mensagens de erro devem direcionar o usuário ao problema, logo, insira uma mensagem clara e específica do erro.
+
+## Exceções
+
+1. Existem diversos tipos de exceções já definidas no .Net. Antes de criar uma exceção, verifique se já não existe uma que se enquadra para sua situação (https://docs.microsoft.com/pt-br/dotnet/standard/design-guidelines/using-standard-exception-types).
+2. Caso sua exceção for de negócio, crie, capture e lance suas próriprias exceções. Nunca utilize a exceção genérica "Exception" para todos os casos.
+3. Ao capturar uma exceção de um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
+
+```
+	try
+	{
+		// Seu código
+	}
+	catch (ExcecaoNegocio excecao)
+	{
+		LogarExcecao(excecao);
+
+		throw;
+	}
+	catch
+	{
+		throw;
+	}
+```
 
 ## Ao iniciar uma aplicação
 
