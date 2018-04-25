@@ -185,6 +185,27 @@ public string ObterContatoPrincipal()
  
  6. Use String.Empty em substituição de "".
  
+ <table class="tg">
+  <tr>
+    <th class="tg-us36">Bom</th>
+    <th class="tg-us36">Ruim</th>
+  </tr>
+  <tr>
+    <td class="tg-us36">
+	if (nome == String.Empty) <br />
+	{<br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
+	}
+    </td>
+    <td class="tg-us36">
+	if (nome == "") <br />
+	{<br /> 
+	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
+	}
+    </td>
+  </tr>
+</table>
+ 
  7. Ao fazer comparações de strings, converta para minúsculas, maiúculas e/ou retire os espaços de antes e depois. Isso garante que a string irá corresponder, mesmo se estiver escrita de forma diferente. 
  
 <table class="tg">
@@ -196,13 +217,13 @@ public string ObterContatoPrincipal()
     <td class="tg-us36">
 	if (nome.ToLower() == "cliente") <br />
 	{<br /> 
-	    // ... <br />
+	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
     <td class="tg-us36">
 	if (nome == "cliente") <br />
 	{<br /> 
-	    // ... <br />
+	    &nbsp;&nbsp;&nbsp;&nbsp; // ... <br />
 	}
     </td>
   </tr>
@@ -222,10 +243,9 @@ public string ObterContatoPrincipal()
   </tr>
 </table>
 
+(TERMINAR)
 
-
-
-6. Utilize o recurso <b>enum</b> para indicar valores discretos.
+8. Utilize o recurso <b>enum</b> para indicar valores discretos.
 
 ```
 	enum StatusPagamento
@@ -256,17 +276,18 @@ public string ObterContatoPrincipal()
 	     }
 	}
 ```
-7. Fique atento aos tipos de acesso (public / private / protected / internal). Variáveis, classes, membros devem ser declarados de forma correta de acordo com o seu uso e nível de acesso.
-8. Evite compartilhar variável de membro entre os métodos. Em tais situações, opte por declarar variáveis locais.
-9. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
-10. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
-11. Mensagens de erro devem direcionar o usuário ao problema, logo, insira uma mensagem clara e específica do erro.
+9. Fique atento aos tipos de acesso (public / private / protected / internal). Variáveis, classes, membros devem ser declarados de forma correta de acordo com o seu uso e nível de acesso.
+10. Evite compartilhar variável de membro entre os métodos. Em tais situações, opte por declarar variáveis locais.
+11. Não crie duas classes em um único arquivo, isso pode dificultar a localização de erros.
+12. Evite criar arquivos grandes. É recomendável refatorar arquivos com mais de 1000 linhas.  
+13. Mensagens de erro devem direcionar o usuário ao problema, logo, insira uma mensagem clara e específica do erro.
 
 ## Exceções
 
 1. Existem diversos tipos de exceções já definidas no .Net. Antes de criar uma exceção, verifique se já não existe uma que se enquadra para sua situação (https://docs.microsoft.com/pt-br/dotnet/standard/design-guidelines/using-standard-exception-types).
 2. Caso sua exceção for de negócio, crie, capture e lance suas próriprias exceções. Nunca utilize a exceção genérica "Exception" para todos os casos.
-3. Ao capturar um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
+3. Use try-catch em sua camada de dados para capturar as exceções de banco de dados. Após gravar a exceção, ela pode ser lançada para que uma outra camada da aplicação possa tomar as medidas adequadas.
+4 . Ao capturar um erro não tratado/esperado, SEMPRE utilize apenas o "throw" e nunca "throw EXCEÇÃO".
 
 <table class="tg">
   <tr>
@@ -277,11 +298,11 @@ public string ObterContatoPrincipal()
     <td class="tg-us36">
 	try<br />
 	{<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;// Seu código<br />
+		&nbsp;&nbsp;&nbsp;&nbsp; // Seu código<br />
 	}<br />
 	catch (ExcecaoNegocio excecao)<br />
 	{<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;LogarExcecao(excecao);<br />
+		&nbsp;&nbsp;&nbsp;&nbsp; LogarExcecao(excecao);<br />
 		<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;throw;<br />
 	}<br />
@@ -305,5 +326,18 @@ public string ObterContatoPrincipal()
 
 ## Ao iniciar uma aplicação
 
-1. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dado. Garanta que esteja tudo pronto para começar.
+1. Se um valor errado for encontrado no arquivo de configuração, a aplicação deve informar ao usuário quais são os valores corretos por meio de uma mensagem de erro.
+2. A aplicação deve ser capaz de criar um arquivo com valores padrão para o caso de algum arquivo de configuração necessário não for encontrado.
+3. Faça uma verificação dos arquivos, das dependências necessárias e da conexão com o banco de dado. Garanta que esteja tudo pronto para começar.
 
+## Arquitetura
+
+1. Use arquitetura em camadas: Camada web, business e data access.
+2. Utilize uma camada específica para acesso ao banco de dados. Nunca execute uma tarefa relacionada ao acesso do BD por meio das páginas de interface do usuário.
+3. Separe a aplicação em assemblies. Agrupe as classes de utilitários independentes em uma biblioteca de classe separada. Todos os arquivos relacionados ao banco de dados podem estar em uma outra biblioteca de classes.
+
+## Comentários
+
+1. Escreva comentários sempre que necessário.
+2. Evite comentar cada linha de código. Isso pode indicar que os nomes das variáveis e métodos não estão claros o bastante.
+3. Sempre verifique os comentários. Garanta que a ortografia esteja correta e que a escrita esteja suficiente para o entendimento do código.
