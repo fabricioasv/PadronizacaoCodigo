@@ -33,12 +33,12 @@ Ex: CalcularImposto(), EnvioEmail
 4. A variável deve ser, preferencialmente, o mesmo nome do método que atribui seu valor sem o verbo. Caso não for possível, deve deixar claro o objetivo da mesma
 
 ```
-private void escreverUmBomCodigo() {
+private void EscreverUmBomCodigo() {
   Fatura faturaDoCliente = ObterFaturaDoCliente();
 }
 ```
 ```
-private Fatura escreverUmBomCodigo() {
+private Fatura ObterFaturaAPartirDeUmBomCodigo() {
   Fatura faturaDoCliente = ObterFaturaDoClienteComRetencaoDeImpostosReferenteAOutroEstado();
   
   return faturaDoCliente;
@@ -50,7 +50,7 @@ private Fatura escreverUmBomCodigo() {
 5. Variáveis não devem ter apenas 1 letra - Ex: a, x, i -, mesmo que sejam auxiliares
 
 ```
-private bool verificarSeExistemFaturasDoCliente(List<Fatura> faturas, string codigoCliente) {
+private bool VerificarSeExistemFaturasDoCliente(List<Fatura> faturas, string codigoCliente) {
   bool existemFaturasDoCliente = faturas.Any(fatura => fatura.CodigoCliente = codigoCliente);
   
   return existemFaturasDoCliente;
